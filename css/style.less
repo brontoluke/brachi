@@ -141,6 +141,27 @@ form#form_search {
     color: white;
   }
 }
+/* banner */
+#banner {
+  .shadow;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  h1 {
+    position: absolute;
+    color: white;
+    bottom: 1.5em;
+    font-family: 'LatoBlack', Arial, sans-serif;
+    font-size: 200%;
+    text-transform: uppercase;
+  }
+}
+img.banner {
+  border: 0;
+  width:100%
+}
+/* main nav */
 div.navbar {
   margin-bottom: 0;
   border: none;
@@ -150,6 +171,23 @@ UL.navbar-nav > li > a {
   margin: 0;
   padding: 0;
   color: white;
+}
+ul#main-menu {
+  padding-top: 42px;
+  li {
+    padding-right: 1em;
+    &:last {
+      padding-right: 0;
+    };
+  }
+  li > a {
+    font-size: 150%;
+    font-family: 'LatoBold', Arial, sans-serif;
+    color: white;    
+    &:hover {
+      text-decoration: underline;
+    };
+  }
 }
 UL.navbar-right button {
   padding-top: 10px;
@@ -174,37 +212,15 @@ button.closer {
   padding: 1em 0;
   color: white;
 }
+
 #main-nav {
   padding: 0.5em 0;
   background: @blue;
   color: white;
-  ul>li {
-    padding: 0;
-  }
-  border: none;
-}
-#banner {
-  .shadow;
-  margin: 0 auto;
-  text-align: center;
-  width: 100%;
-  position: relative;
-  h1 {
-    position: absolute;
-    color: white;
-    bottom: 1.5em;
-    font-family: 'LatoBlack', Arial, sans-serif;
-    font-size: 200%;
-    text-transform: uppercase;
-  }
-}
-img.banner {
-  border: 0;
-  width:100%
 }
 div.dropdown {
   .blue-gradient;
-  .shadow(0.5);
+    .shadow(0.5);
   a {
     .link;
     margin-left: 4px;
@@ -228,6 +244,32 @@ div.dropdown-item {
   padding-bottom: 1em;
   color: white;
   border-bottom: 1px solid white;
+}
+
+/**
+ * Secondary Nav
+ */
+div.secondary-nav {
+  h2 {
+    font-family: 'LatoBold';
+  }
+  ul>li {
+    border-bottom: 1px solid @gray;
+  }
+  ul>li {
+    ul {
+      margin-left: 1em;
+    }
+    ul>li {
+      border-bottom: none;
+      &:last-child {
+        margin-bottom: 1em;
+      }  
+    }
+    h3 {
+      margin-bottom: 0.5em;
+    }
+  }
 }
 
 
@@ -321,6 +363,13 @@ div.dropdown[data-visibility="hidden"] { display: none; }
   padding-right: 1em;
   text-transform: uppercase;
   font-weight: bolder;
+}
+/* breadcrumbs */
+div#breadcrumbs {
+  margin: 1.42em 0;
+  font-size: 87.5%;
+  line-height: 1.42em;
+  color: @gray;
 }
 
 /**

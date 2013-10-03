@@ -125,6 +125,29 @@ form#form_search button {
   padding: 0 0 0 8px;
   color: white;
 }
+/* banner */
+#banner {
+  -webkit-box-shadow: inset 0px 8px 8px -6px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: inset 0px 8px 8px -6px rgba(0, 0, 0, 0.8);
+  box-shadow: inset 0px 8px 8px -6px rgba(0, 0, 0, 0.8);
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+#banner h1 {
+  position: absolute;
+  color: white;
+  bottom: 1.5em;
+  font-family: 'LatoBlack', Arial, sans-serif;
+  font-size: 200%;
+  text-transform: uppercase;
+}
+img.banner {
+  border: 0;
+  width: 100%;
+}
+/* main nav */
 div.navbar {
   margin-bottom: 0;
   border: none;
@@ -138,6 +161,23 @@ UL.navbar-nav > li > a {
   margin: 0;
   padding: 0;
   color: white;
+}
+ul#main-menu {
+  padding-top: 42px;
+}
+ul#main-menu li {
+  padding-right: 1em;
+}
+ul#main-menu li:last {
+  padding-right: 0;
+}
+ul#main-menu li > a {
+  font-size: 150%;
+  font-family: 'LatoBold', Arial, sans-serif;
+  color: white;
+}
+ul#main-menu li > a:hover {
+  text-decoration: underline;
 }
 UL.navbar-right button {
   padding-top: 10px;
@@ -173,31 +213,6 @@ button.closer {
   padding: 0.5em 0;
   background: #0a3c82;
   color: white;
-  border: none;
-}
-#main-nav ul > li {
-  padding: 0;
-}
-#banner {
-  -webkit-box-shadow: inset 0px 8px 8px -6px rgba(0, 0, 0, 0.8);
-  -moz-box-shadow: inset 0px 8px 8px -6px rgba(0, 0, 0, 0.8);
-  box-shadow: inset 0px 8px 8px -6px rgba(0, 0, 0, 0.8);
-  margin: 0 auto;
-  text-align: center;
-  width: 100%;
-  position: relative;
-}
-#banner h1 {
-  position: absolute;
-  color: white;
-  bottom: 1.5em;
-  font-family: 'LatoBlack', Arial, sans-serif;
-  font-size: 200%;
-  text-transform: uppercase;
-}
-img.banner {
-  border: 0;
-  width: 100%;
 }
 div.dropdown {
   background: #145cba;
@@ -238,6 +253,27 @@ div.dropdown-item {
   padding-bottom: 1em;
   color: white;
   border-bottom: 1px solid white;
+}
+/**
+ * Secondary Nav
+ */
+div.secondary-nav h2 {
+  font-family: 'LatoBold';
+}
+div.secondary-nav ul > li {
+  border-bottom: 1px solid #666666;
+}
+div.secondary-nav ul > li ul {
+  margin-left: 1em;
+}
+div.secondary-nav ul > li ul > li {
+  border-bottom: none;
+}
+div.secondary-nav ul > li ul > li:last-child {
+  margin-bottom: 1em;
+}
+div.secondary-nav ul > li h3 {
+  margin-bottom: 0.5em;
 }
 /**
  * Content
@@ -335,6 +371,13 @@ div.dropdown[data-visibility="hidden"] {
   padding-right: 1em;
   text-transform: uppercase;
   font-weight: bolder;
+}
+/* breadcrumbs */
+div#breadcrumbs {
+  margin: 1.42em 0;
+  font-size: 87.5%;
+  line-height: 1.42em;
+  color: #666666;
 }
 /**
  * News

@@ -5,14 +5,14 @@ $(document).ready(function(){
     });
     
     
-    $('#main-nav button').each(function(){
+    $('#main-nav a').each(function(){
       $(this).on('click', function(e){
         $btn = $(e.target);
         $btn_target = $($(e.target).attr('data-target'));
         console.log('btn-%s has been clicked',$btn.attr('data-target'));
-        // is there another active button?
-        if ( $('#main-nav button[data-status="active"]').length>0 && $btn.attr('data-status')=="inactive" ) {          
-         var $btn2 = $('#main-nav button[data-status="active"]');
+        // is there another active a?
+        if ( $('#main-nav a[data-status="active"]').length>0 && $btn.attr('data-status')=="inactive" ) {          
+         var $btn2 = $('#main-nav a[data-status="active"]');
          var $btn2_target = $($btn2.attr('data-target'));
          $btn2_target.hide();
          $btn2_target.attr('data-visibility') == "visible" ? $btn2.attr('data-visibility','hidden') : $btn2.attr('data-visibility','visible');
