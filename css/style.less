@@ -246,8 +246,61 @@ div.dropdown-item {
   border-bottom: 1px solid white;
 }
 @media screen and (max-width: 768px) {
-  ul.nav.navbar-nav {
-    clear: both;
+  div#top-nav {
+    ul.nav.navbar-nav {
+      padding: 0 15px;
+    }
+    div.navbar-collapse {
+      display: block;
+      padding: 0 15px;
+      border: none;
+    }
+    ul#languages li,
+    .nav>li>a {
+      display: inline;
+    }
+    ul#languages.nav.navbar-nav {
+      float: left;
+      margin-right: 20px;
+    }
+    ul.navbar-right {
+      float: right;
+    }
+  }
+  div#banner {
+    display: none;
+  }
+  div#main-nav {
+    ul.nav.navbar-nav {
+      clear: both;
+      padding: 0 15px;
+    }
+    div.navbar-collapse {
+      display: block;
+      padding: 0 15px;
+      border: none;
+    }
+    ul#main-menu {
+      margin-left: 0;
+      margin-top: 1em;
+      li {
+        padding-bottom: 1em;
+      }
+    }
+    ul#main-menu.nav.navbar-nav {
+      padding: 0;
+    }
+  }
+  div.dropdown {
+   h2 {
+     padding-bottom: 0.5em;
+   }
+   ul>li {
+     padding-left: 20px;
+     &:last-child {
+       padding-bottom: 1em
+     };
+   }
   }
 }
 
@@ -516,6 +569,18 @@ footer {
     border-bottom: none;
   }
 }
+@media screen and (max-width: 768px) {
+  footer {
+    img { width: auto !important }
+    div.navbar-collapse {
+      display: block;
+      ul {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
 
 /**
  * Flexslider
