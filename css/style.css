@@ -655,3 +655,19 @@ div.flexslider {
 div.flexslider ol {
   bottom: 4px;
 }
+/**
+ * Carousel
+**/
+.carousel-inner img {
+  width: 100%;
+}
+.carousel-inner div.carousel-caption {
+  text-align: left;
+  margin-left: -5%;
+}
+.carousel-inner div.carousel-caption h3 {
+  font-size: 200%;
+}
+.carousel-inner div.carousel-caption p {
+  font-size: 125%;
+}
