@@ -96,10 +96,15 @@ div#top-nav {
   margin-bottom: 0;
 }
 ul#languages li {
+  float: none;
   padding-right: 8px;
 }
 ul#languages li:last-child {
   padding-right: 0;
+}
+ul#languages li,
+.nav > li > a {
+  display: inline;
 }
 form#form_search input {
   -webkit-border-radius: 4px;
@@ -148,6 +153,9 @@ img.banner {
   width: 100%;
 }
 /* main nav */
+img#logo-brachi-main-menu {
+  max-width: 220px;
+}
 div.navbar {
   margin-bottom: 0;
   border: none;
@@ -209,10 +217,13 @@ button.closer {
   padding: 1em 0;
   color: white;
 }
-#main-nav {
+div#main-nav {
   padding: 0.5em 0;
   background: #0a3c82;
   color: white;
+}
+div#main-nav .nav > li {
+  display: block;
 }
 div.dropdown {
   background: #145cba;
@@ -254,6 +265,15 @@ div.dropdown-item {
   color: white;
   border-bottom: 1px solid white;
 }
+div.dropdown-item h2 {
+  margin-bottom: 0.5em;
+}
+div.dropdown-item ul > li {
+  padding-left: 20px;
+}
+div.dropdown-item ul > li:last-child {
+  margin-bottom: 1em;
+}
 @media screen and (max-width: 768px) {
   div#top-nav ul.nav.navbar-nav {
     padding: 0 15px;
@@ -262,10 +282,6 @@ div.dropdown-item {
     display: block;
     padding: 0 15px;
     border: none;
-  }
-  div#top-nav ul#languages li,
-  div#top-nav .nav > li > a {
-    display: inline;
   }
   div#top-nav ul#languages.nav.navbar-nav {
     float: left;
@@ -280,6 +296,11 @@ div.dropdown-item {
   div#main-nav ul.nav.navbar-nav {
     clear: both;
     padding: 0 15px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 0;
   }
   div#main-nav div.navbar-collapse {
     display: block;
@@ -292,8 +313,14 @@ div.dropdown-item {
   }
   div#main-nav ul#main-menu li {
     padding-bottom: 1em;
+    font-size: 85%;
   }
-  div#main-nav ul#main-menu.nav.navbar-nav {
+  div#main-nav .nav > li {
+    display: inline;
+  }
+  ul#main-menu.nav.navbar-nav.navbar-right {
+    border-bottom: none;
+    border-top: none;
     padding: 0;
   }
   div.dropdown h2 {
@@ -339,6 +366,8 @@ section#content {
   -moz-box-shadow: inset 0px 8px 8px -6px rgba(0, 0, 0, 0.8);
   box-shadow: inset 0px 8px 8px -6px rgba(0, 0, 0, 0.8);
   padding: 1em 0 2em 0;
+  /* sidebar */
+
 }
 section#content div.container {
   padding-bottom: 2em;
@@ -353,11 +382,14 @@ section#content h2 {
   line-height: 1em;
   margin: 1em 0 0.5em 0;
 }
-section#content h2.sidebar {
-  margin: 0;
-}
 section#content div.sidebar {
   float: left;
+}
+section#content div.sidebar h2 {
+  margin: 0;
+}
+section#content div.sidebar input {
+  max-width: 300px;
 }
 section#content div#brachinews {
   padding-bottom: 1em;
@@ -416,7 +448,6 @@ section#content p.first-p {
   }
   section#content div.brachi {
     margin-top: 1em;
-    border-bottom: 1px dotted #666666;
   }
   section#content div.brachi:last-child {
     border-bottom: none;
@@ -427,6 +458,13 @@ section#content p.first-p {
   section#content p.more {
     margin-top: 0;
     margin-bottom: 1em;
+  }
+}
+@media screen and (max-width: 992px) {
+  section#content div#brachinews {
+    border-top: 1px solid black;
+    margin-top: 1em;
+    width: 100%;
   }
 }
 img.article {
@@ -497,6 +535,14 @@ div.news-brachi p.more {
   img {
     width: 50%;
   }
+  img#logo-brachi-main-menu {
+    width: auto !important;
+    max-width: 220px;
+  }
+  img#logo-brachi-footer {
+    width: auto !important;
+    max-width: 120px;
+  }
 }
 @media screen and (max-width: 768px) {
   div.news-brachi {
@@ -531,6 +577,9 @@ footer div.footer-nav {
 footer div.container.wrapper {
   padding-top: 2.45em;
   padding-bottom: 2.45em;
+}
+footer img#logo-brachi-footer {
+  max-width: 120px;
 }
 footer ul.nav {
   margin-top: 1.05em;
