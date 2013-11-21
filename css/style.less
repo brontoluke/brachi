@@ -132,6 +132,10 @@ ul#languages {
 ul#languages li,
 .nav>li>a {
   display: inline;
+  &:hover {
+    background: none;
+    text-decoration: underline;
+  };
 }
 form#form_search {
   input {    
@@ -181,6 +185,7 @@ UL.navbar-nav > li > a {
   color: white;
 }
 ul#main-menu {
+  text-align: right;
   padding-top: 45px;
   li {
     padding-right: 1em;
@@ -225,7 +230,7 @@ div#main-nav {
   background: @blue;
   color: white;
   .nav>li {
-    display: block;
+    display: inline;
   }    
 }
 div.dropdown {
@@ -300,6 +305,7 @@ div.dropdown-item {
       border: none;
     }
     ul#main-menu {
+      text-align: left;
       margin-left: 0;
       margin-top: 1em;
       li {
@@ -349,12 +355,15 @@ div.secondary-nav {
     ul>li {
       border-bottom: none;
       &:last-child {
-        margin-bottom: 1em;
+        margin-bottom: 0.5em;
       }  
     }
     h3 {
       margin-bottom: 0.5em;
     }
+  }
+  a {
+    color: @gray;
   }
 }
 
@@ -415,6 +424,9 @@ section#content {
     font-size: 200%;
     line-height: 1em;
     vertical-align: middle;
+  }
+  a {
+    color: rgb(51, 51, 51);
   }
   p.more,
   ul.more { 
@@ -494,6 +506,9 @@ div#breadcrumbs {
   font-size: 87.5%;
   line-height: 1.42em;
   color: @gray;
+  A {
+    color: @gray;
+  }
 }
 
 /**
@@ -577,7 +592,9 @@ footer {
   img#logo-brachi-footer {
     max-width: 120px;
   }
-  
+  P {
+    font-size: 85%;
+  }
   ul.nav {
     margin-top: 1.05em;
     margin-left: 25px;
@@ -655,9 +672,11 @@ div.flexslider {
     margin-left: -5%;
     h3 {
       font-size: 200%;
+      font-family: 'LatoBold', Arial, sans-serif;
     }
     p {
       font-size: 125%;
+      font-family: 'LatoRegular', Arial, sans-serif;      
     }    
   }
 }

@@ -106,6 +106,11 @@ ul#languages li,
 .nav > li > a {
   display: inline;
 }
+ul#languages li:hover,
+.nav > li > a:hover {
+  background: none;
+  text-decoration: underline;
+}
 form#form_search input {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -171,6 +176,7 @@ UL.navbar-nav > li > a {
   color: white;
 }
 ul#main-menu {
+  text-align: right;
   padding-top: 45px;
 }
 ul#main-menu li {
@@ -222,7 +228,7 @@ div#main-nav {
   color: white;
 }
 div#main-nav .nav > li {
-  display: block;
+  display: inline;
 }
 div.dropdown {
   background: #145cba;
@@ -307,6 +313,7 @@ div.dropdown-item ul > li:last-child {
     border: none;
   }
   div#main-nav ul#main-menu {
+    text-align: left;
     margin-left: 0;
     margin-top: 1em;
   }
@@ -352,10 +359,13 @@ div.secondary-nav ul > li ul > li {
   border-bottom: none;
 }
 div.secondary-nav ul > li ul > li:last-child {
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 div.secondary-nav ul > li h3 {
   margin-bottom: 0.5em;
+}
+div.secondary-nav a {
+  color: #666666;
 }
 /**
  * Content
@@ -415,6 +425,9 @@ section#content h2 span.modern-pict {
   font-size: 200%;
   line-height: 1em;
   vertical-align: middle;
+}
+section#content a {
+  color: #333333;
 }
 section#content p.more,
 section#content ul.more {
@@ -495,6 +508,9 @@ div#breadcrumbs {
   margin: 1.42em 0;
   font-size: 87.5%;
   line-height: 1.42em;
+  color: #666666;
+}
+div#breadcrumbs A {
   color: #666666;
 }
 /**
@@ -579,6 +595,9 @@ footer div.container.wrapper {
 }
 footer img#logo-brachi-footer {
   max-width: 120px;
+}
+footer P {
+  font-size: 85%;
 }
 footer ul.nav {
   margin-top: 1.05em;
@@ -666,7 +685,9 @@ div.flexslider ol {
 }
 .carousel-inner div.carousel-caption h3 {
   font-size: 200%;
+  font-family: 'LatoBold', Arial, sans-serif;
 }
 .carousel-inner div.carousel-caption p {
   font-size: 125%;
+  font-family: 'LatoRegular', Arial, sans-serif;
 }
