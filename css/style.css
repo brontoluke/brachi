@@ -345,6 +345,8 @@ div.dropdown-item ul > li:last-child {
 div.secondary-nav {
   font-size: 87.5%;
   line-height: 1.42em;
+  /* news details' page sidebar */
+
 }
 div.secondary-nav h2 {
   font-family: 'LatoBold';
@@ -367,14 +369,46 @@ div.secondary-nav ul > li h3 {
 div.secondary-nav a {
   color: #666666;
 }
+div.secondary-nav div#news-data h2 {
+  margin-top: 1em;
+}
+div.secondary-nav div#news-data ul li {
+  border-bottom: none;
+}
+div.secondary-nav div#news-data ul p {
+  font-size: 75%;
+  line-height: 1.333333em;
+  color: #5a5a5a;
+}
+div.secondary-nav div#news-data ul h4 {
+  text-transform: uppercase;
+}
+div.secondary-nav div#news-data ul a {
+  border-bottom: 1px dotted;
+  text-decoration: none;
+  border-bottom: none;
+}
+div.secondary-nav div#news-data ul a:hover {
+  border-bottom: 1px solid;
+  text-decoration: none;
+}
+div.secondary-nav div#news-data ul a:hover {
+  border-bottom: 1px dotted;
+}
 /**
- * Content
+ * Main content - upper part of the page, just above the news
  */
 section#content {
   -webkit-box-shadow: inset 0px 8px 8px -6px rgba(0, 0, 0, 0.8);
   -moz-box-shadow: inset 0px 8px 8px -6px rgba(0, 0, 0, 0.8);
   box-shadow: inset 0px 8px 8px -6px rgba(0, 0, 0, 0.8);
   padding: 1em 0 2em 0;
+  /* Dettaglio news */
+
+  /* News index */
+
+  /* Brachi */
+
   /* sidebar */
 
 }
@@ -389,7 +423,69 @@ section#content h2 {
   font-size: 112.5%;
   font-weight: normal;
   line-height: 1em;
-  margin: 1em 0 0.5em 0;
+  margin: 0;
+}
+section#content label {
+  font-size: 75%;
+  line-height: 1.333333em;
+  color: #5a5a5a;
+}
+section#content div.news-detail p.news-data {
+  color: #5a5a5a;
+  margin-bottom: 0.5em;
+}
+section#content div.news-detail h3 {
+  color: #0a3c82;
+  font-family: 'LatoBold', Arial, sans-serif;
+  font-weight: normal;
+  line-height: 1em;
+  margin: 0 0 1em 0;
+}
+section#content div.news-index img {
+  width: 100%;
+}
+section#content div.news-index div.news-item {
+  margin-bottom: 1em;
+}
+section#content div.news-index div.news-item:last-child {
+  margin-bottom: 0;
+}
+section#content div.news-index p.news-data {
+  color: #5a5a5a;
+  font-size: 75%;
+  line-height: 1.333333em;
+  margin: 0 0 0.5em 0;
+}
+section#content div.news-index h1 {
+  font-size: 100%;
+  margin: 0 0 1em 0;
+  color: #0a3c82;
+  font-family: 'LatoBold', Arial, sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+section#content div.news-index h2 {
+  font-size: 100%;
+}
+section#content div.news-index h3 {
+  font-size: 87.5%;
+  line-height: 1.142857em;
+  color: #0a3c82;
+  font-family: 'LatoBold', Arial, sans-serif;
+  font-weight: normal;
+  margin: 0 0 0.5em 0;
+}
+section#content div.news-index p {
+  margin-top: 0;
+}
+section#content div.news-index a {
+  color: #0a3c82;
+}
+section#content div.brachi p strong,
+section#content div.brachi p b {
+  color: #0a3c82;
+  font-family: 'LatoBold', Arial, sans-serif;
+  font-weight: normal;
 }
 section#content div.sidebar {
   float: left;
@@ -480,7 +576,7 @@ section#content p.first-p {
   }
 }
 img.article {
-  width: 90%;
+  width: 100%;
 }
 form#form_area_clienti div.form-group {
   margin-bottom: 0.5em;
@@ -539,6 +635,12 @@ div.news-brachi p {
   font-size: 87.5%;
   line-height: 1.42em;
   margin-top: 1.42em;
+}
+div.news-brachi p strong,
+div.news-brachi p b {
+  color: #0a3c82;
+  font-family: 'LatoBold', Arial, sans-serif;
+  font-weight: normal;
 }
 div.news-brachi p.more {
   color: #0a3c82;
@@ -690,4 +792,16 @@ div.flexslider ol {
 .carousel-inner div.carousel-caption p {
   font-size: 125%;
   font-family: 'LatoRegular', Arial, sans-serif;
+}
+div#news-slider ol.carousel-indicators {
+  bottom: 2%;
+}
+div#news-slider div.carousel-caption {
+  font-size: 100%;
+  font-family: 'LatoRegular', Arial, sans-serif;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  left: 4%;
+  bottom: 12%;
 }

@@ -33,7 +33,7 @@
         <div class="navbar-collapse collapse">
           <ul id="languages" class="nav navbar-nav">
             <li class="selected"><a href="#">Italiano</a></li>
-            <li><a href="#">English</a></li>
+            <li><a href="#">EngSinalish</a></li>
             <li><a href="#">中阔</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
@@ -69,7 +69,7 @@
           <div class="carousel-caption">
             <h3>Controlliamo la qualità</h3>
             <p>Lorem ipsum dolor sit amet</p>
-          </div>
+          </div>       
         </div>
         <div class="item">
           <img src="images/image-banner-03.jpg" alt="">
@@ -204,34 +204,80 @@
   <section id="content">
     <div class="container">
       <div class="row">
-        <!-- brachi -->
-        <div class="col-md-3 brachi">
-          <h2>Testing</h2>
-          <img src="images/image-division-01.jpg" />
-          <p>
-  <strong>Lorem</strong> ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est <strong>Lorem</strong> ipsum dolor sit amet. <strong>Lorem</strong> ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est <strong>Lorem</strong> ipsum dolor sit amet.            
-          </p>
-          <p class="more">leggi tutto</p>
+        <!-- secondary nav -->
+        <div class="col-md-3 secondary-nav">
+          <div id="news-data">
+            <h2>Archivio news</h2>
+            <ul>
+              <li>
+                <p>10 novembre 2013</p>
+                <h4><a href="#">Nuova divisione calzature</a></h4>
+              </li>
+              <li>
+                <p>22 ottobre 2013</p>
+                <h4><a href="#">Dolor sit amet</a></h4>
+              </li>
+              <li>
+                <p>3 settembre 2013</p>
+                <h4><a href="#">Lorem ipsum dolor</a></h4>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="clearfix visible-sm visible-xs"></div>
-        <div class="col-md-3 brachi">
-          <h2>Consulting</h2>
-          <img src="images/image-division-02.jpg" />
+        <!-- /secondary nav -->
+        <!-- page content -->
+        <div class="col-md-6 news-detail">
+          <p class="news-data">20 ottobre 2013</p>
+          <h2>Divisione calzature</h2>
+          <h3>Un occhio attento al prodotto finito</h3>
+          <!-- slideshow -->
+          <div id="news-slider" class="carousel slide" data-ride="carousel" data-wrap="false" data-interval="5000">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#news-slider" data-slide-to="0" class="active"></li>
+              <li data-target="#news-slider" data-slide-to="1"></li>
+              <li data-target="#news-slider" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="images/image-news-01.jpg" alt="">
+                <div class="carousel-caption">
+                  <p>Lorem ipsum dolor sit amet</p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="images/image-news-02.jpg" alt="">
+                <div class="carousel-caption">
+                  <p>Lorem ipsum dolor sit amet</p>
+                </div>       
+              </div>
+              <div class="item">
+                <img src="images/image-news-03.jpg" alt="">
+                <div class="carousel-caption">
+                  <p>Lorem ipsum dolor sit amet</p>
+                </div>
+              </div>
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#news-slider" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#news-slider" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+          </div>
+          <!-- /slideshow -->
+<!--
+          <img id ="news-img" class="article" src="images/image-laboratorio.jpg" />
+          <label>Didascaia della figura</label>
+-->          
           <p>
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.            
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.     
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.       
           </p>
-          <p class="more">leggi tutto</p>
         </div>
-        <div class="clearfix visible-sm visible-xs"></div>
-        <div class="col-md-3 brachi">
-          <h2>Sostenibilità</h2>
-          <img src="images/image-division-03.jpg" />
-          <p>
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.            
-          </p>
-          <p class="more">leggi tutto</p>
-        </div>
-        <!-- /brachi -->
+        <!-- /page content -->
         <!-- sidebar -->
         <div class="clearfix visible-sm visible-xs"></div>
         <div class="col-md-3 brachi">
@@ -285,7 +331,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
           <h3>Novità e aggiornamenti normativi</h3>
           <img src="images/image-news-01.jpg" />
           <p>
-            <strong>Lorem</strong> ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est <strong>Lorem</strong> ipsum dolor sit amet. <strong>Lorem</strong> ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam.
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam.
           </p>
           <p class="more">leggi tutto</p>
         </div>
@@ -360,10 +406,10 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
         <div class="dropdown-item row">
           <div class="col-md-12">
             <ul>
+              <li><img src="images/logo-brachi-laboratorio-analisi-chimiche.png" title="Brachi" alt="logo Brachi - Laboratorio di analisi chimiche"/></li>
+              <li><img src="images/logo-brachi-studio-tecnico.png" title="Brachi, Studio Tecnico Brachi" alt="logo Brachi - Studio Tecnico Brachi"/></li>
               <li><img src="images/logo-brachi-testing-service.png" title="Brachi Testing Service" alt="logo Brachi Testing Service"/></li>
               <li><img src="images/logo-brachi-condizionatura-materie-tessili.png" title="Brachi -  Condizionatura materie tessili" alt="logo Brachi - Condizionatura materie tessili"/></li>
-              <li><img src="images/logo-brachi-studio-tecnico.png" title="Brachi, Studio Tecnico Brachi" alt="logo Brachi - Studio Tecnico Brachi"/></li>
-              <li><img src="images/logo-brachi-4-sustainability.png" title="Brachi -  4 Sustainability" alt="logo Brachi - 4 Sustainability"/></li>
             </ul>
           </div>
         </div>
@@ -413,13 +459,13 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
     </div>
   </footer>
   <!-- /footer -->
-
-  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>    
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://code.jquery.com/jquery.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
+  <!-- include other javascript files -->
   <script src="js/jquery.flexslider.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
   <script src="js/scripts.js"></script>
 </body>
 </html>
