@@ -403,9 +403,11 @@ section#content {
   -moz-box-shadow: inset 0px 8px 8px -6px rgba(0, 0, 0, 0.8);
   box-shadow: inset 0px 8px 8px -6px rgba(0, 0, 0, 0.8);
   padding: 1em 0 2em 0;
-  /* Dettaglio news */
+  /* TPL Il gruppo e Contatti */
 
-  /* News index */
+  /* TPL news-show */
+
+  /* TPL news-index */
 
   /* Brachi */
 
@@ -429,6 +431,9 @@ section#content label {
   font-size: 75%;
   line-height: 1.333333em;
   color: #5a5a5a;
+}
+section#content div.gruppo-contatti h2 {
+  margin: 1em 0 1em 0;
 }
 section#content div.news-detail p.news-data {
   color: #5a5a5a;
