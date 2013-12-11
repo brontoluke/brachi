@@ -345,6 +345,7 @@ div.dropdown-item ul > li:last-child {
 div.secondary-nav {
   font-size: 87.5%;
   line-height: 1.42em;
+  margin-top: 1em;
   /* news details' page sidebar */
 
 }
@@ -413,6 +414,10 @@ section#content {
 
   /* sidebar */
 
+  /* Brachinews */
+
+  /* images */
+
 }
 section#content div.container {
   padding-bottom: 2em;
@@ -435,6 +440,9 @@ section#content label {
 section#content div.gruppo-contatti h2 {
   margin: 1em 0 1em 0;
 }
+section#content div.news-detail b {
+  color: #0a3c82;
+}
 section#content div.news-detail p.news-data {
   color: #5a5a5a;
   margin-bottom: 0.5em;
@@ -455,6 +463,9 @@ section#content div.news-index div.news-item {
 section#content div.news-index div.news-item:last-child {
   margin-bottom: 0;
 }
+section#content div.news-index b {
+  color: #0a3c82;
+}
 section#content div.news-index p.news-data {
   color: #5a5a5a;
   font-size: 75%;
@@ -462,8 +473,8 @@ section#content div.news-index p.news-data {
   margin: 0 0 0.5em 0;
 }
 section#content div.news-index h1 {
-  font-size: 100%;
-  margin: 0 0 1em 0;
+  font-size: 112.5%;
+  margin: 1em 0 1em 0;
   color: #0a3c82;
   font-family: 'LatoBold', Arial, sans-serif;
   font-weight: normal;
@@ -486,11 +497,20 @@ section#content div.news-index p {
 section#content div.news-index a {
   color: #0a3c82;
 }
+section#content div.brachi {
+  margin-top: 1em;
+}
 section#content div.brachi p strong,
 section#content div.brachi p b {
   color: #0a3c82;
   font-family: 'LatoBold', Arial, sans-serif;
   font-weight: normal;
+}
+section#content div.brachi h2 {
+  margin-bottom: 0.5em;
+}
+section#content div.brachi h2 a {
+  color: #0a3c82;
 }
 section#content div.sidebar {
   float: left;
@@ -498,8 +518,21 @@ section#content div.sidebar {
 section#content div.sidebar h2 {
   margin: 0;
 }
+section#content div.sidebar h3 {
+  color: black;
+  margin-top: 0;
+}
+section#content div.sidebar h4 {
+  color: #0a3c82;
+  margin-top: 1em;
+  font-size: 87.5%;
+  font-weight: normal;
+}
 section#content div.sidebar input {
   max-width: 300px;
+}
+section#content div#area_clienti h3 {
+  margin-top: 1em;
 }
 section#content div#brachinews {
   padding-bottom: 1em;
@@ -555,6 +588,12 @@ section#content p.social span.modern-pict {
 section#content p.first-p {
   margin-top: 0;
 }
+section#content div.brachi img {
+  width: 100%;
+}
+section#content div.news-brachi img {
+  width: 100%;
+}
 @media screen and (max-width: 768px) {
   section#content img {
     width: 60%;
@@ -578,6 +617,12 @@ section#content p.first-p {
     border-top: 1px solid black;
     margin-top: 1em;
     width: 100%;
+  }
+  section#content div.brachi img {
+    width: 60%;
+  }
+  section#content div.news-brachi img {
+    width: 60%;
   }
 }
 img.article {
@@ -809,4 +854,21 @@ div#news-slider div.carousel-caption {
   padding: 0;
   left: 4%;
   bottom: 12%;
+}
+/**
+  * cross-fade effect 
+  * see https://coderwall.com/p/w4k7sw
+**/
+.carousel .item {
+  -webkit-transition: 0.7s ease-in-out opacity;
+  -moz-transition: 0.7s ease-in-out opacity;
+  -ms-transition: 0.7s ease-in-out opacity;
+  -o-transition: 0.7s ease-in-out opacity;
+  transition: 0.7s ease-in-out opacity;
+  left: 0 !important;
+}
+.carousel .active.left,
+.carousel .active.right {
+  opacity: 0;
+  z-index: 2;
 }
