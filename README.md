@@ -41,10 +41,10 @@
 ## 15 novembre
 * created branch _responsive_ and merged into _master_: fixed IE<9 issues with mediaqueries, see ~luke/Sites/Lab/bootstrap-ie8
 
+## 11 dicembre
+* fatte modifiche come da mail Beatrice 131202 e 131203 e inviato a Leonardo il materiale
+
+
 ## TODO
-* marchio troppo piccolo su ipad verticale
-* inserire 4sustainability e nuovi marchietti nel piede
-* ordine voci del piede: legal, privacy, mappa sito, credits
+* creare versione outline del marchio 4sustainability
 * sistemare comparsa menu per il piede: trasformare button in anchor
-* pulire style.less
-* rendere il template più html5 (section, article etc)
