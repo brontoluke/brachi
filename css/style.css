@@ -346,6 +346,8 @@ div.secondary-nav {
   font-size: 87.5%;
   line-height: 1.42em;
   margin-top: 1em;
+  /* accredia */
+
   /* news details' page sidebar */
 
 }
@@ -369,6 +371,9 @@ div.secondary-nav ul > li h3 {
 }
 div.secondary-nav a {
   color: #666666;
+}
+div.secondary-nav div.accredia {
+  margin-top: 6em;
 }
 div.secondary-nav div#news-data {
   /*    h2 {

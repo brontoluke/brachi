@@ -1,10 +1,5 @@
 $(document).ready(function(){
-    $('.flexslider').flexslider({
-      animation: "slide",
-      directionNav: false
-    });
-    
-    
+
     $('#main-nav a').each(function(){
       $(this).on('click', function(e){
         $btn = $(e.target);
