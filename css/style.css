@@ -776,10 +776,13 @@ footer .nav button {
   padding-right: 1em;
   font-weight: bolder;
 }
-footer dl {
+footer div.addresses dl {
   float: left;
   margin-right: 30px;
   padding: 0 0 1.42em 0;
+}
+footer div.addresses dt {
+  text-transform: uppercase;
 }
 footer .hr {
   padding-top: 1.42em;
