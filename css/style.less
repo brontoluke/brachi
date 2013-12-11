@@ -368,10 +368,10 @@ div.secondary-nav {
   }  
   /* news details' page sidebar */
   div#news-data {
-    h2 {
+/*    h2 {
       margin-top: 1em;
     }
-    ul {
+*/    ul {
       li {
         border-bottom: none;
       }
@@ -429,7 +429,7 @@ section#content {
   }
   /* TPL news-show */
   div.news-detail {
-    b {
+    b, strong {
       color: @blue;
     }
     p.news-data {
@@ -455,7 +455,7 @@ section#content {
         margin-bottom: 0;
       };
     }
-    b {
+    b, strong {
       color: @blue;
     }
     p.news-data {
@@ -549,6 +549,7 @@ section#content {
     font-size: 87.5%;
     line-height: 1.42em;
   }
+
   p.more,
   p.social {
     color: @blue;
@@ -691,6 +692,9 @@ div.news-brachi {
         font-family: 'LatoBold', Arial, sans-serif;
         font-weight: normal;
     } 
+  }
+  a {
+    color: @blue;
   }
   p.more {
     color: @blue;
