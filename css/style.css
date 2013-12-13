@@ -844,6 +844,9 @@ div.flexslider ol {
 /**
  * Carousel
 **/
+.carousel-control {
+  display: none;
+}
 .carousel-inner img {
   width: 100%;
 }
