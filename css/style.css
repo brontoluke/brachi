@@ -467,7 +467,7 @@ section#content div.news-index img {
   width: 100%;
 }
 section#content div.news-index div.news-item {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 section#content div.news-index div.news-item:last-child {
   margin-bottom: 0;
@@ -878,16 +878,7 @@ div#news-slider div.carousel-caption {
   * cross-fade effect 
   * see https://coderwall.com/p/w4k7sw
 **/
-.carousel .item {
-  -webkit-transition: 0.7s ease-in-out opacity;
-  -moz-transition: 0.7s ease-in-out opacity;
-  -ms-transition: 0.7s ease-in-out opacity;
-  -o-transition: 0.7s ease-in-out opacity;
-  transition: 0.7s ease-in-out opacity;
-  left: 0 !important;
-}
-.carousel .active.left,
-.carousel .active.right {
-  opacity: 0;
-  z-index: 2;
-}
+/*
+.carousel .item { -webkit-transition: .7s ease-in-out opacity; -moz-transition: .7s ease-in-out opacity; -ms-transition: .7s ease-in-out opacity; -o-transition: .7s ease-in-out opacity; transition: .7s ease-in-out opacity; left: 0 !important; }
+.carousel .active.left, .carousel .active.right { opacity: 0; z-index: 2; }
+*/

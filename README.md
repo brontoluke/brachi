@@ -46,6 +46,7 @@
 
 
 ## TODO
+* pallini che si muovono nello slider (controllare padding)
 * creare versione outline del marchio 4sustainability
 * creare template newsletter e pensare al CRM
 * sistemare comparsa menu per il piede: trasformare button in anchor
