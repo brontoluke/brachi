@@ -414,6 +414,8 @@ section#content {
   padding: 1em 0 2em 0;
   /* TPL Il gruppo e Contatti */
 
+  /* TPL Contatti */
+
   /* TPL news-show */
 
   /* TPL news-index */
@@ -447,6 +449,28 @@ section#content label {
 }
 section#content div.gruppo-contatti h2 {
   margin: 1em 0 1em 0;
+}
+section#content dl.contatti {
+  font-size: 87.5%;
+}
+section#content dl.contatti #map {
+  margin: 1em 0;
+}
+section#content div.contatti.aziende h3 {
+  font-size: 87.5%;
+  color: black;
+  margin: 1em 0 0.5em 0;
+}
+section#content div.contatti.aziende h3:first-child {
+  /*margin-top: 0;*/
+
+}
+section#content div.contatti.aziende img.logo {
+  float: left;
+  width: 30%;
+}
+section#content div.contatti.aziende p {
+  margin-left: 35%;
 }
 section#content div.news-detail b,
 section#content div.news-detail strong {
