@@ -8,6 +8,11 @@
 @lightcream: rgb(245,241,237);
 @gray: rgb(102,102,102);
 @light-gray: rgb(90,90,90);
+@blackNav: #333333;
+
+.blue {
+  color: @blue;
+}
 .blue-gradient {
   background: rgb(20,92,186);
   background: -moz-linear-gradient(top,  rgb(20,92,186) 0%, rgb(10,60,130) 96%);
@@ -399,6 +404,94 @@ div.secondary-nav {
     }
   }
 }
+/**
+ * BrachiMagazine sidebar
+ */
+.bmLink(@color: @gray) {
+  color: @color;
+  text-decoration: none;
+  border-bottom: none;
+  &:hover {
+   border-bottom: 1px dotted @color;
+  };        
+}
+ 
+div#brachiMagazineSidebar {
+  h2 {
+    a {
+      .bmLink(@blue);
+    }
+  }
+  h3.issueNumber {
+    margin: 0;
+    padding: 0.5em 0;
+    border-bottom: solid 1px @blackNav;
+    a {
+      .bmLink(@blackNav);
+    }
+  }
+  h3.issueNumber.first {
+    margin-top: 1.7em;
+    padding-top: 0;
+    border-top: solid 1px @gray;
+    border-top: none;
+  }
+  h3.issueNumber.first.active {
+    a {
+      color: black;
+    }
+  }
+  /* h3 issue-article */
+  h3.issueNumber.issueArticle {
+    border: none;
+    border-top: solid 1px @gray;
+  }
+  h3.issueNumber.issueArticle.first {
+    margin-top: 1.7em;
+    border-top: none;
+  }
+  h3.issueNumber.issueArticle.last {
+    margin-top: 0.5em;
+    border-bottom: solid 1px @gray;
+  }
+  div.issueSummary {
+    margin-left: 1em;
+    padding-bottom: 0.5em;
+    h4 {
+      margin-top: 0.5em;
+      text-transform: uppercase;
+      a {
+        font-size: 100%;
+        color: @blue;
+        text-decoration: none;
+        border-bottom: none;
+        &:hover {
+          border-bottom: 1px dotted @blue;
+        };        
+      }
+    }
+    a.section.first {
+      margin-top: 0.25em;
+    }
+    h5 {
+      font-weight: normal;
+      margin-top: 0.5em;
+      a { color: @gray; } 
+      a.active { 
+        font-weight: bold; 
+      }   
+    }
+    h5.first {
+      margin-top: 0.25em;
+    }
+  }
+  div.issueContentMenu {
+    display: none;
+  }
+  div.issueContentMenuActive {
+    display: block;
+  }
+}
 
 
 /**
@@ -407,6 +500,15 @@ div.secondary-nav {
 section#content {
   .shadow;
   padding: 1em 0 2em 0;
+  a {
+    color: @blue;
+    text-decoration: none;
+    border-bottom: 1px dotted @blue;
+    &:hover {
+      text-decoration: none;
+      border-bottom: none;
+    };
+  }
   div.container {
     padding-bottom: 2em;
     border-bottom: 1px solid black;
@@ -533,6 +635,47 @@ section#content {
         color: @blue;
       }
     }
+    /* Newsletter */
+    div.newsletter {
+      input, select {
+        text-align: left;
+        width: 60%;
+      }
+      input[type=submit] {
+        margin-top: 1em;
+        width: 25%;
+        text-transform: uppercase;
+        text-align: center;
+      }
+
+    }
+  }
+  /* Ricerca */
+  div.ricerca {
+    p.ricerca-keyword {
+      font-size: 100%;
+      margin: 1em 0 0 0;
+      padding: 0;
+    }
+    form.ricerca-form p {
+      margin: 0 0 1em 0;
+      padding: 0;
+      color: @light-gray;
+    }
+    ul.ricerca-dettaglio {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      li {
+        margin-bottom: 0.5em;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    a.ricerca-link {
+      color: @blue;
+    }
   }
   /* sidebar */
   div.sidebar {
@@ -577,6 +720,26 @@ section#content {
     font-size: 87.5%;
     line-height: 1.42em;
   }
+  /* BrachiSocial */
+  div#brachisocial {
+    padding-bottom: 1em;
+    border-bottom: 1px solid black;
+    margin-bottom: 1em;
+    width: 100%;
+    div.brachisocial-item {
+      display: inline;
+      float: left;
+      margin-top: 0.5em;
+      font-size: 87.5%;
+      line-height: 1.42em;
+    }
+    div.linkedin {
+      margin-left: 10px;
+    }
+    span.sn-label {
+      margin-left: 2px;
+    }
+  }
 
   p.more,
   p.social {
@@ -616,6 +779,67 @@ section#content {
   div.news-brachi img {
     width: 100%;
   }
+  /**
+   * Brachi Magazine 
+   */
+  div.brachiMagazine.brachiMagazineIntro {
+    h2 {
+      margin-top: 0.8em;
+    }
+    h3 {
+      color: @blue;
+    }
+  }
+  div.brachiMagazine {
+    div.imgWrapper {
+      margin-top: 1em;
+      img {
+        width: 100%;
+      }
+    }    
+    strong {
+      color: @blue;
+      font-family: 'Lato', arial, sans-serif;
+    }
+  }
+  div.brachiMagazine.brachiMagazineSummary {
+    h2 {
+      margin-top: 0.8em;
+    }
+    div.summaryWrapper {
+      margin-bottom: 2em;
+      font-size: 87.5%;
+      h4.section {
+        margin-top: 1em;
+        text-transform: uppercase;
+        color: @blue;
+      }
+      h3.articleTitle {
+        font-family: 'Lato', arial, sans-serif;
+        margin-top: 0.5em;
+        a {
+          .bmLink(black);
+          font-weight: normal;
+        }
+      }
+      h3.articleTitle.first {
+      }      
+    }
+  }
+  /**
+   * Form
+   */
+  div.checkbox {
+    input#privacy-checkbox {
+      width: 5%;  
+    }
+    label {
+      vertical-align: text-top;
+    }
+  }
+  input#privacy-checkbox {
+    width: 5%;  
+  }
 }
 @media screen and (max-width: 768px) {
 	section#content {
@@ -651,6 +875,7 @@ section#content {
     }
   }
 }
+
 
 
 img.article {
@@ -723,6 +948,13 @@ div.news-brachi {
   }
   a {
     color: @blue;
+    text-decoration: none;
+    border-bottom: 1px dotted @blue;
+    font-family: LatoBold, Arial, sans-serif;
+    &:hover {
+      text-decoration: none;
+      border-bottom: none;
+    };
   }
   p.more {
     color: @blue;
@@ -885,6 +1117,19 @@ div#news-slider {
     padding: 0;
     left: 4%;
     bottom: 12%;
+  }
+}
+
+div#modal-accredia {
+  h2 { 
+    color: @blue;
+    margin-bottom: 1em;    
+  }
+  p {
+    margin-bottom: 1em;
+  }
+  button.close {
+    margin-top: -6px;
   }
 }
 /**

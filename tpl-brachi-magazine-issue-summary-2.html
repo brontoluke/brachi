@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Brachi, verifichiamo la qualità dei prodotti tessili</title>
+    <!-- properly render unicode characters in IE -->
+<!--    <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Brachi -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/font-awesome-ie7.min.css" />
+    <link rel="stylesheet" href="css/modernpics.css" />
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/style.css" />    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+<body>
+  <!-- header -->
+  <header>
+    <!-- top nav -->
+    <div id="top-nav" class="navbar">
+      <div class="container">
+        <div class="navbar-header"></div>
+        <div class="navbar-collapse collapse">
+          <ul id="languages" class="nav navbar-nav">
+            <li class="selected"><a href="#">Italiano</a></li>
+            <li><a href="#">English</a></li>
+            <li><a href="#">中阔</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <form id="form_search">
+                <span class="glyphicon glyphicon-search" style="padding-right: 4px"></span>&nbsp;<input value="cerca">
+              </form>              
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- /top nav -->
+    <!-- banner -->
+    <div id="banner" class="carousel slide" data-ride="carousel" data-wrap="false" data-interval="5000">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#banner" data-slide-to="0" class="active"></li>
+        <li data-target="#banner" data-slide-to="1"></li>
+        <li data-target="#banner" data-slide-to="2"></li>
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="images/image-banner-01.jpg" alt="">
+          <div class="carousel-caption">
+            <h3>Partner per lo sviluppo</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/image-banner-02.jpg" alt="">
+          <div class="carousel-caption">
+            <h3>Controlliamo la qualità</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>       
+        </div>
+        <div class="item">
+          <img src="images/image-banner-03.jpg" alt="">
+          <div class="carousel-caption">
+            <h3>Sostenibilità</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+      </div>
+      <!-- Controls -->
+      <a class="left carousel-control" href="#banner" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#banner" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+    <!-- /banner -->
+    <!-- collapsible menus -->
+    <!-- il gruppo -->
+    <div id="nav-il-gruppo" data-visibility="hidden" data-status="collapsed" class="dropdown">
+      <div class="container">
+        <div class="dropdown-item row">
+          <div class="col-md-3">
+            <h2><i class="icon-circle-arrow-right"></i> <a href="#">L'identità</a></h2>
+            <ul>
+              <li>Mission e Vision</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h2><i class="icon-circle-arrow-right"></i> <a href="#">I valori</a></h2>
+          </div>
+          <div class="col-md-3">
+            <h2><i class="icon-circle-arrow-right"></i> <a href="#">La storia</a></h2>
+          </div>
+          <div class="col-md-3">
+            <h2><i class="icon-circle-arrow-right"></i> <a href="#">Le sedi</a></h2>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 closer">
+            <button class="closer" data-target="#nav-il-gruppo"><i class="icon-sort-up"></i></button>
+          </div>
+        </div>      
+      </div>
+    </div>
+    <!-- i servizi -->
+    <div id="nav-i-servizi" data-visibility="hidden" data-status="collapsed" class="dropdown">
+      <div class="container">
+        <div class="dropdown-item row">
+          <div class="col-md-4">
+            <h2><i class="icon-circle-arrow-right"></i> <a href="#">Testing</a></h2>
+            <ul>
+              <li><a href="testing-prove-laboratorio.html">Prove di laboratorio</a></li>
+              <li><a href="#">Condizionatura materie tessili</a></li>
+              <li><a href="#">MyLab</a></li>
+              <li><a href="#">Accreditamenti</a></li>
+              <li><a href="#">Membership</a></li>
+              <li><a href="#">Clienti</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h2><i class="icon-circle-arrow-right"></i> <a href="#">Consulting</a></h2>
+            <ul>
+              <li><a href="#">Consulenze normative</a></li>
+              <li><a href="#">Consulenze tecniche</a></li>
+              <li><a href="#">Consulenze assicurative</a></li>
+              <li><a href="#">Gestione sinistri</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h2><i class="icon-circle-arrow-right"></i> <a href="#">Sostenibilità</a></h2>
+            <ul>
+              <li><a href="#">Sostenibilità di prodotto</a></li>
+              <li><a href="#">Sostenibilità di processo</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 closer">
+            <button class="closer" data-target="#nav-i-servizi"><i class="icon-sort-up"></i></button>
+          </div>
+        </div>      
+      </div>      
+    </div>
+    <!-- /collapsible-menu -->
+    <!-- main menu -->
+    <div id="main-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header"></div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="index.html">
+                <img id="logo-brachi-main-menu" src="images/logo-brachi.png" title="Brachi" alt="logo Brachi"/>
+              </a>
+            </li>
+          </ul>
+          <ul id="main-menu" class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#" data-status="inactive" data-target="#nav-il-gruppo">
+                Il gruppo
+              </a>              
+            </li>
+            <li>
+              <a href="#" data-status="inactive" data-target="#nav-i-servizi">
+                I servizi
+              </a>              
+            </li>
+            <li>
+              <a href="#" data-status="inactive" data-target="#nav-news">
+                News
+              </a>              
+            </li>
+            <li>
+              <a href="#" data-status="inactive" data-target="#nav-contatti">
+                Contatti
+              </a>              
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- /main menu -->
+  </header>
+  <!-- /header -->
+  <!-- content -->
+  <section id="content">
+    <div class="container">
+      <div class="row">
+        <!-- secondary nav -->
+        <div class="col-md-3 secondary-nav brachiMagazine">
+          <div id="brachiMagazineSidebar">
+            <h2>
+              <a href="tpl-brachi-magazine-intro.html">Brachi Magazine</a>
+            </h2>
+            <div class="issueContainer">
+              <!-- numero 4/2014 -->
+              <article id="issue_4_2014_wrapper">
+                <h3 class="issueNumber first active">
+                  <a href="tpl-brachi-magazine-issue-summary.html" title="">Numero 4/2014</a>
+                </h3>
+              </article>
+              <!-- numero 3/2014 -->
+              <article id="issue_3_2014_wrapper">
+                <h3 class="issueNumber">
+                  <a href="tpl-brachi-magazine-issue-summary.html" title="">Numero 3/2014</a>
+                </h3>
+              </article>
+            </div>
+          </div>
+        </div>
+        <!-- /secondary nav -->
+        <!-- page content -->
+        <div class="col-md-8 brachiMagazine brachiMagazineSummary">
+          <h2>Brachi Magazine <span class="issueTitleNumber">3/2014</span></h2>
+          <div class="imgWrapper">
+            <img class="brachiMagazine" src="images/brachi-magazine-burberry.jpg">
+          </div>
+          <p class="editoriale">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </p>
+          <!-- summary -->
+          <div class="summaryWrapper">
+            <p class="blue">In questo numero</p>
+            <!-- About Brachi -->
+            <div class="aboutBrachi">
+              <h4 class="section">About Brachi</h4>
+              <div class="summary">
+                <h3 class="articleTitle first">
+                  <a href="tpl-brachi-magazine-issue-article.html">Nuova divisione calzature</a>
+                </h3>
+                <h3 class="articleTitle">
+                  <a href="tpl-brachi-magazine-issue-article.html">Benvenuto brachiFast, analisi garantite in 24 ore</a>
+                </h3>
+                <h3 class="articleTitle">
+                  <a href="tpl-brachi-magazine-issue-article.html">Process Factory e Brachi danno vita a 4sustainability, competenze in rete per lo sviluppo sostenibile</a>
+                </h3>
+              </div>
+            </div>
+            <!-- /About Brachi -->            
+            <!-- Nel mondo -->
+            <div class="aboutBrachi">
+              <h4 class="section">Nel mondo</h4>
+              <div class="summary">
+                <h3 class="articleTitle first">
+                  <a href="tpl-brachi-magazine-issue-article.html">Cina, norme più stringenti per gli articoli da bambino</a>
+                </h3>
+                <h3 class="articleTitle">
+                  <a href="tpl-brachi-magazine-issue-article.html">Russia: i requisiti di sicurezza in vigore dal 2015</a>
+                </h3>
+              </div>
+            </div>
+            <!-- /Nel mondo -->            
+            <!-- Approfondimeti -->
+            <div class="aboutBrachi">
+              <h4 class="section">Approfondimeti</h4>
+              <div class="summary">
+                <h3 class="articleTitle first">
+                  <a href="tpl-brachi-magazine-issue-article.html">Cina, norme più stringenti per gli articoli da bambino</a>
+                </h3>
+                <h3 class="articleTitle">
+                  <a href="tpl-brachi-magazine-issue-article.html">Russia: i requisiti di sicurezza in vigore dal 2015</a>
+                </h3>
+              </div>
+            </div>
+            <!-- /Approfondimeti -->            
+            <!-- Normative -->
+            <div class="aboutBrachi">
+              <h4 class="section">Normative</h4>
+              <div class="summary">
+                <h3 class="articleTitle first">
+                  <a href="tpl-brachi-magazine-issue-article.html">Cina, norme più stringenti per gli articoli da bambino</a>
+                </h3>
+                <h3 class="articleTitle">
+                  <a href="tpl-brachi-magazine-issue-article.html">Russia: i requisiti di sicurezza in vigore dal 2015</a>
+                </h3>
+              </div>
+            </div>
+            <!-- /Normative -->            
+          </div>
+          <!-- /summary -->
+        </div>
+        <!-- /page content -->
+      </div>
+    </div>
+  </section>
+  <!-- /content -->    
+  <!-- news -->
+  <section id="news">
+    <div class="container">
+      <!-- news brachi content -->
+      <div id="content-news-brachi" class="row">
+        <div class="col-md-4 news-brachi">
+          <h2>In giro per il mondo</h2>
+          <h3>Novità e aggiornamenti normativi</h3>
+          <img src="images/image-news-01.jpg" />
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam.
+          </p>
+          <p class="more">leggi tutto</p>
+        </div>
+        <div class="clearfix visible-sm visible-xs"></div>
+        <div class="col-md-4 news-brachi">
+          <h2>Cina e resto del mondo</h2>
+          <h3>Novità e aggiornamenti normativi</h3>
+          <img src="images/image-news-02.jpg" />
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam.
+          </p>
+          <p class="more">leggi tutto</p>
+        </div>
+        <div class="clearfix visible-sm visible-xs"></div>
+        <div class="col-md-4 news-brachi">
+          <h2>Gate Hangzhou</h2>
+          <h3>Novità e aggiornamenti normativi</h3>
+          <img src="images/image-news-03.jpg" />
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam.
+          </p>
+          <p class="more">leggi tutto</p>
+        </div>
+      </div>
+      <!-- /news brachi content -->    
+    </div>
+  </section>
+  <!-- /news -->
+  <!-- footer -->
+  <footer id="footer">
+    <div class="container wrapper">
+      <!-- footer nav -->
+      <div class="row footer-nav">
+        <div class="col-md-12">
+          <div class="navbar-header">
+            <img id="logo-brachi-footer" src="images/logo-brachi-footer.png" title="Brachi" alt="logo Brachi"/>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li>
+                <button data-status="inactive" data-target="#footer-il-gruppo">
+                  Il gruppo<i class="icon-sort-down"></i>
+                </button>              
+              </li>
+              <li>
+                <button data-status="inactive" data-target="#footer-legal">
+                  Legal
+                </button>              
+              </li>
+              <li>
+                <button data-status="inactive" data-target="#footer-credits">
+                  Credits
+                </button>              
+              </li>
+              <li>
+                <button data-status="inactive" data-target="#footer-privacy">
+                  Privacy
+                </button>              
+              </li>
+              <li>
+                <button data-status="inactive" data-target="#footer-mappa-del-sito">
+                  Mappa del sito
+                </button>              
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- /footer nav -->
+      <!-- footer collapsible menus -->
+      <div id="footer-il-gruppo" data-visibility="hidden" data-status="collapsed" class="dropdown">
+        <div class="dropdown-item row">
+          <div class="col-md-12">
+            <ul>
+              <li><img src="images/logo-brachi-laboratorio-analisi-chimiche.png" title="Brachi" alt="logo Brachi - Laboratorio di analisi chimiche"/></li>
+              <li><img src="images/logo-brachi-studio-tecnico.png" title="Brachi, Studio Tecnico Brachi" alt="logo Brachi - Studio Tecnico Brachi"/></li>
+              <li><img src="images/logo-brachi-testing-services.png" title="Brachi Testing Service" alt="logo Brachi Testing Service"/></li>
+              <li><img src="images/logo-brachi-condizionatura-materie-tessili.png" title="Brachi -  Condizionatura materie tessili" alt="logo Brachi - Condizionatura materie tessili"/></li>
+            </ul>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 closer">
+              <button class="closer" data-target="#footer-il-gruppo"><i class="icon-sort-up"></i></button>
+            </div>
+          </div>      
+        </div>        
+      </div>
+      <!-- /footer collapsible menus -->
+      <!-- footer addresses -->
+      <div class="row hr">
+        <div class="col-md-12">
+          <dl>
+            <dt>Sede Principale</dt>
+            <dd>Via Fonda di Mezzana,  61/L</dd>
+            <dd>59100 Prato</dd>
+            <dd>Tel. +39 0574.591343 </dd>
+            <dd>Fax +39 0574.593975</dd>
+            <dd>marketing@brachi.it</dd>
+            <dd>www.brachi.it</dd>
+          </dl>
+          <dl>
+            <dt>Sede cinese</dt>
+            <dd>Hangzhou Brachi Technological</dd>
+            <dd>Services Co. Ltd.</dd>
+            <dd>Room 1102, No. 9 building </dd>
+            <dd>No. 88 Jiangling Road, Binjiang District</dd>
+            <dd>Hangzhou, City</dd>
+            <dd>Tel: +86 0571.82869972  Fax: +86 0571.82869971</dd>
+          </dl>
+        </div>
+      </div>
+      <!-- /footer addresses -->
+      <!-- footer sign -->
+      <div class="row hr">
+        <div class="col-md-12">
+          <p>
+            © 2013 Brachi - Sede Legale via Fonda di Mezzana, 61/L  – 59100 Prato<br>
+            Cod.Fisc./P.IVA/ Registro Imprese di Prato n. 000000000 - R.E.A. 000000000 Capitale Sociale Euro 000000000 i.v. 
+          </p>
+        </div>
+      </div>
+      <!-- /footer sign -->            
+    </div>
+  </footer>
+  <!-- /footer -->
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- include other javascript files -->
+  <script src="js/jquery.flexslider.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- properly render unicode characters in IE -->
+  <meta http-equiv="X-UA-Compatible" content="IE=7" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+  <title>Brachi, verifichiamo la qualità dei prodotti tessili</title>
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.flexslider-min.js"></script>
+  <script src="js/scripts.js"></script>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/960_12_col.css" />
+  <link rel="stylesheet" href="css/din.css" />
+  <link rel="stylesheet" href="css/font-awesome.css" />
+  <link rel="stylesheet" href="css/font-awesome-ie7.min.css" />
+  <link rel="stylesheet" href="css/scala-sans.css" />
+  <link rel="stylesheet" href="css/modernpics.css" />
+  <link rel="stylesheet" href="css/flexslider.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/blue.css" />  
+</head>
+<body>
+  <!-- header section -->
+  <div id="header">
+    <!-- top zone -->
+    <div id="top-zone-wrapper">
+      <div id="top-zone" class="container_12">
+        <!-- lang-menu -->
+        <div id="lang-menu" class="grid_6">
+          <ul class="menu">
+            <li class="selected"><a href="#">Italiano</a></li>
+            <li><a href="#">English</a></li>
+            <li><a href="#">中阔</a></li>
+          </ul>
+        </div>
+        <!-- /lang-menu -->
+        <!-- user-menu -->
+        <div id="user-menu" class="grid_6">
+          <ul class="menu">
+            <li><a href="#">Social networks</a></li>
+            <li><a href="#">Accedi</a></li>
+            <li><a href="#">Aiuto</a></li>
+            <li>
+              <form id="form_search">
+                <input value="cerca">
+              </form>
+            </li>
+          </ul>
+        </div>
+        <!-- /user-menu -->
+      </div>
+    </div>
+    <!-- /top zone -->
+    <div class="clear"></div>
+    <!-- banner zone -->
+    <div id="banner-zone-wrapper">
+      <div id="banner-zone" class="container_12">
+        <ul>
+          <li class="slide">
+            <img src="images/image-banner-01.jpg">
+          </li>
+          <li class="slide">
+            <img src="images/image-banner-03.jpg">
+          </li>
+          <li class="slide">
+            <img src="images/image-banner-02-blue.jpg">
+          </li>
+        </ul>
+<!--
+        <img id="banner-img" src="images/image-banner.jpg" style="margin-left: -240px" />
+-->
+      </div>
+    </div>
+    <!-- /banner zone -->
+    <div class="clear"></div>
+    <!-- nav zone -->
+    <div id="nav-zone-wrapper">
+      <div id="nav-zone" class="container_12">
+        <!-- logo -->
+        <div id="logo" class="grid_3">
+          <img src="images/logo-brachi.png" />
+        </div>
+        <!-- /logo -->
+        <!-- main-menu -->
+        <div id="main-menu" class="grid_9">
+          <ul class="menu">
+            <li>
+              <a id="mm-chi" class="mm" href="#">Profilo</a>
+              <div id="mm-chi-drop-down" class="drop-down grid_12">
+                <div class="grid_3 alpha droplet">
+                  <h2><i class="icon-circle-arrow-right"></i> <a href="#">Azienda</a></h2>
+                  <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                  <p><a href="#">leggi tutto</a></p>
+                </div>
+                <div class="grid_3 droplet">
+                  <h2><i class="icon-circle-arrow-right"></i> Mission</h2>
+                  <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                  <p><a href="#">leggi tutto</a></p>                  
+                </div>
+                <div class="grid_3 droplet">
+                  <h2><i class="icon-circle-arrow-right"></i> Vision</h2>
+                  <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                  <p><a href="#">leggi tutto</a></p>                  
+                </div>
+                <div class="grid_3 omega droplet">
+                  <h2><i class="icon-circle-arrow-right"></i> ...</h2>
+                  <p>...</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a id="mm-servizi" class="mm" href="#">Attività</a>
+              <div id="mm-servizi-drop-down" class="drop-down grid_12">
+                <div class="grid_4 alpha droplet">
+                  <h2><i class="icon-circle-arrow-right"></i> <a href="#">Testing</a></h2>
+                  <ul class="submenu">
+                    <li><a href="#">Prove di laboratorio</a></li>
+                    <li><a href="#">Controlli</a></li>
+                    <li><a href="#">Analisi e test</a></li>
+                    <li><a href="#">Rapporti di prova</a></li>
+                    <li><a href="#">Accreditamenti</a></li>
+                  </ul>
+                </div>
+                <div class="grid_4 droplet">
+                  <h2><i class="icon-circle-arrow-right"></i> Consulting</h2>
+                  <ul class="submenu">
+                    <li><a href="#">Consulenze Assicurative</a></li>
+                    <li><a href="#">Assistenza al danneggiato</a></li>
+                    <li><a href="#">Consulenza e formazione "Laboratori pivati"</a></li>
+                    <li><a href="#">Consulenza normativa</a></li>
+                  </ul>
+                </div>
+                <div class="grid_4 droplet">
+                  <h2><i class="icon-circle-arrow-right"></i> Services</h2>
+                  <ul class="submenu">
+                    <li><a href="#">Condizionatura materie prime</a></li>
+                    <li><a href="#">Ispezioni - Auditing</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a id="mm-press" href="#">press release</a>
+            </li>
+            <li>
+              <a id="mm-contatti" href="#">contatti</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /main-menu -->
+      </div>
+    </div>
+    <!-- /nav zone -->
+    <div class="clear"></div>
+  </div>
+  <!-- /header section -->
+  <!-- content section -->
+  <div id="content">
+    <!-- content zone wrapper -->
+    <div id="content-zone-wrapper">
+      <!-- brachi main content -->
+      <div id="content-zone-brachi" class="container_12">
+        <!-- brachi -->
+        <div class="grid_3 brachi">
+          <h2>Testing</h2>
+          <img src="images/image-division-01.jpg" />
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </p>
+          <p class="more">leggi tutto</p>
+          <p class="social"><span class="modern-pict" style="text-transform: uppercase">f</span>&nbsp;<span class="modern-pict">t</span></p>
+        </div>
+        <div class="grid_3 brachi">
+          <h2>Consulting</h2>
+          <img src="images/image-division-02.jpg" />
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </p>
+          <p class="more">leggi tutto</p>
+          <p class="social"><span class="modern-pict" style="text-transform: uppercase">f</span>&nbsp;<span class="modern-pict">t</span></p>
+        </div>
+        <div class="grid_3 brachi">
+          <h2>Services</h2>
+          <img src="images/image-division-03.jpg" />
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </p>
+          <p class="more">leggi tutto</p>
+          <p class="social"><span class="modern-pict" style="text-transform: uppercase">f</span>&nbsp;<span class="modern-pict">t</span></p>
+        </div>
+        <!-- /brachi -->
+        <!-- sidebar -->
+        <div class="grid_3 brachi">
+          <div id="brachinews">
+            <h3>Notizie e aggiornamenti</h3>
+            <h2 class="sidebar">
+              <span class="modern-pict" style="text-transform: lowercase">a</span>&nbsp;Brachi news
+            </h2>
+            <p class="first-p">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+            </p>
+            <p class="more">
+              Leggi il numero attuale<br />
+              Consulta l'archivio delle notizie
+            </p>
+            <p>
+              Iscriviti alla newsletter<br />
+              Accedi
+            </p>
+          </div>
+          <div id="area_clienti">
+            <h3>Area clienti</h3>
+            <h2 class="sidebar">
+              <span class="modern-pict">V</span>&nbsp;my lab
+            </h2>
+            <p class="first-p">
+              Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim 
+            </p>
+            <p>Accedi</p>
+            <form id="form_area_clienti">
+              <input value="nome utente" />
+              <input value="password" />
+            </form>
+          </div>
+        </div>
+        <!-- /sidebar -->
+      </div>
+      <!-- /brachi main content -->
+      <div class="clear"></div>
+      <!-- news brachi content -->
+      <div id="content-zone-news-brachi" class="container_12">
+        <div class="grid_4 news-brachi">
+          <h2>In giro per il mondo</h2>
+          <h3>Novità e aggiornamenti normativi</h3>
+          <img src="images/image-news-01.jpg" />
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam.
+          </p>
+          <p class="more">leggi tutto</p>
+          <p class="social"><span class="modern-pict" style="text-transform: uppercase">f</span>&nbsp;<span class="modern-pict">t</span></p>
+        </div>
+        <div class="grid_4 news-brachi">
+          <h2>Cina e resto del mondo</h2>
+          <h3>Novità e aggiornamenti normativi</h3>
+          <img src="images/image-news-02.jpg" />
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam.
+          </p>
+          <p class="more">leggi tutto</p>
+          <p class="social"><span class="modern-pict" style="text-transform: uppercase">f</span>&nbsp;<span class="modern-pict">t</span></p>
+        </div>
+        <div class="grid_4 news-brachi">
+          <h2>Gate Hangzhou</h2>
+          <h3>Novità e aggiornamenti normativi</h3>
+          <img src="images/image-news-03.jpg" />
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam.
+          </p>
+          <p class="more">leggi tutto</p>
+          <p class="social"><span class="modern-pict" style="text-transform: uppercase">f</span>&nbsp;<span class="modern-pict">t</span></p>
+        </div>
+      </div>
+      <!-- /news brachi content -->
+      <div class="clear"></div>
+    </div>
+    <!-- /content zone wrapper -->
+  </div>
+  <!-- /content section -->
+  <!-- footer section -->
+  <div id="footer">
+    <div id="footer-zone-wrapper">
+      <!-- footer -->
+      <div id="footer-zone-brachi" class="container_12">
+        <div class="grid_12 brachi">
+          <strong>Brachi</strong><br>
+          Via Fonda di Mezzana, 61/L<br>
+          59100 Prato - Italy<br>
+          Tel. +39. 0574. 59.13.43 r.a.<br>
+          Fax. +39. 0574. 59.39.75<br>
+          info@brachi.it<br>
+        </div>
+      </div>
+  </div>
+  <!-- /footer section -->
+</body>
+</html>

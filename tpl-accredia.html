@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prove di laboratorio</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+	    <!-- properly render unicode characters in IE -->
+<!--    <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Brachi -->
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/font-awesome.css" />
+    <link rel="stylesheet" href="/css/font-awesome-ie7.min.css" />
+    <link rel="stylesheet" href="/css/modernpics.css" />
+    <link rel="stylesheet" href="/css/flexslider.css">
+    <link rel="stylesheet" href="/css/font.css" />
+    <link rel="stylesheet" href="/css/style.css" />    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+<body>
+  <!-- header -->
+  <header>
+      <!-- top nav -->
+    
+    <div id="top-nav" class="navbar">
+      <div class="container">
+        <div class="navbar-header"></div>
+        <div class="navbar-collapse collapse">
+          <ul id="languages" class="nav navbar-nav">
+            <li class="selected"><a href="/page.asp?IDLingua=1&ID=12" title="Italian">Italiano</a></li>
+            <li><a href="/page.asp?IDLingua=2&ID=12" title="English">English</a></li>
+            <li><a href="/page.asp?IDLingua=3&ID=12" title="Chinese">中阔</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <form id="form_search" action="/cerca.asp" method="post">
+                <span class="glyphicon glyphicon-search" style="padding-right: 4px"></span>&nbsp;<input name="TestoRicerca" id="TestoRicerca" value="" placeholder="Cerca">
+              </form>              
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- /top nav -->
+    <!-- banner -->
+    <div id="banner" class="carousel slide" data-ride="carousel" data-interval="5000">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+      
+        <li data-target="#banner" data-slide-to="0" class="active"></li>
+      
+        <li data-target="#banner" data-slide-to="1" ></li>
+      
+        <li data-target="#banner" data-slide-to="2" ></li>
+      
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+            
+        <div class="item active">
+          <img src="/public/images/slider/gallery1.jpg" alt="">
+          <div class="carousel-caption">
+            <h3>Muoviamo la qualità</h3>
+            <p></p>
+          </div>
+        </div>
+            
+        <div class="item">
+          <img src="/public/images/slider/gallery2.jpg" alt="">
+          <div class="carousel-caption">
+            <h3>Dalla consulenza alla gestione</h3>
+            <p></p>
+          </div>
+        </div>
+            
+        <div class="item">
+          <img src="/public/images/slider/gallery3.jpg" alt="">
+          <div class="carousel-caption">
+            <h3>Sostenibili si diventa</h3>
+            <p></p>
+          </div>
+        </div>
+              
+      </div>
+      <!-- Controls -->
+      <a class="left carousel-control" href="#banner" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#banner" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+    <!-- /banner -->
+    <!-- collapsible menus -->
+
+    <!-- Il Gruppo -->
+    <div id="nav-id-2" data-visibility="hidden" data-status="collapsed" class="dropdown">
+      <div class="container">
+        <div class="dropdown-item row">
+        
+          <div class="col-md-3">
+            <h2><i class="icon-circle-arrow-right"></i> <a href="/Identita/P/6">Identità</a></h2>
+            
+            <ul>
+            
+              <li><a href="/Mission_E_Vision/P/38">Mission e Vision</a></li>
+            
+            </ul>
+			
+          </div>
+        
+          <div class="col-md-3">
+            <h2><i class="icon-circle-arrow-right"></i> <a href="/Valori/P/7">Valori</a></h2>
+            
+          </div>
+        
+          <div class="col-md-3">
+            <h2><i class="icon-circle-arrow-right"></i> <a href="/Storia/P/8">Storia</a></h2>
+            
+          </div>
+        
+          <div class="col-md-3">
+            <h2><i class="icon-circle-arrow-right"></i> <a href="/Sedi/P/10">Sedi</a></h2>
+            
+          </div>
+        
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 closer">
+            <button class="closer" data-target="#nav-id-2"><i class="icon-sort-up"></i></button>
+          </div>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Servizi -->
+    <div id="nav-id-3" data-visibility="hidden" data-status="collapsed" class="dropdown">
+      <div class="container">
+        <div class="dropdown-item row">
+        
+          <div class="col-md-3">
+            <h2><i class="icon-circle-arrow-right"></i> <a href="/Testing/P/11">Testing</a></h2>
+            
+            <ul>
+            
+              <li><a href="/Prove_Di_Laboratorio/P/12">Prove di laboratorio</a></li>
+            
+              <li><a href="/Divisione_Calzature/P/33">Divisione Calzature</a></li>
+            
+              <li><a href="/Condizionatura_Materie_Tessili/P/14">Condizionatura materie tessili</a></li>
+            
+              <li><a href="/My_Lab/P/15">My Lab</a></li>
+            
+              <li><a href="/Accreditamenti/P/16">Accreditamenti</a></li>
+            
+              <li><a href="/Membership/P/34">Membership</a></li>
+            
+              <li><a href="/Clienti/P/36">Clienti</a></li>
+            
+            </ul>
+			
+          </div>
+        
+          <div class="col-md-3">
+            <h2><i class="icon-circle-arrow-right"></i> <a href="/Consulenza/P/17">Consulenza</a></h2>
+            
+            <ul>
+            
+              <li><a href="/Consulenze_Normative_Per_La_Qualita/P/18">Consulenze normative per la qualità</a></li>
+            
+              <li><a href="/Consulenze_Tecniche_Di_Prodotto/P/19">Consulenze tecniche di prodotto</a></li>
+            
+              <li><a href="/Consulenze_Tecnico_assicurative/P/20">Consulenze tecnico-assicurative</a></li>
+            
+              <li><a href="/Gestione_Sinistri/P/37">Gestione sinistri</a></li>
+            
+            </ul>
+			
+          </div>
+        
+          <div class="col-md-3">
+            <h2><i class="icon-circle-arrow-right"></i> <a href="/Sostenibilita/P/21">Sostenibilità</a></h2>
+            
+            <ul>
+            
+              <li><a href="http://www.4sustainability.it/sustainability-it/">www.4sustainability.it</a></li>
+            
+            </ul>
+			
+          </div>
+        
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 closer">
+            <button class="closer" data-target="#nav-id-3"><i class="icon-sort-up"></i></button>
+          </div>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Contatti -->
+    <div id="nav-id-5" data-visibility="hidden" data-status="collapsed" class="dropdown">
+      <div class="container">
+        <div class="dropdown-item row">
+        
+          <div class="col-md-3">
+            <h2><i class="icon-circle-arrow-right"></i> <a href="/Il_Gruppo/P/26">Il Gruppo</a></h2>
+            
+          </div>
+        
+          <div class="col-md-3">
+            <h2><i class="icon-circle-arrow-right"></i> <a href="/Le_Aziende/P/27">Le Aziende</a></h2>
+            
+          </div>
+        
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 closer">
+            <button class="closer" data-target="#nav-id-5"><i class="icon-sort-up"></i></button>
+          </div>
+        </div>      
+      </div>
+    </div>
+
+    <!-- News -->
+    <div id="nav-id-4" data-visibility="hidden" data-status="collapsed" class="dropdown">
+      <div class="container">
+        <div class="dropdown-item row">
+        
+          <div class="col-md-3">
+            <h2><i class="icon-circle-arrow-right"></i> <a href="/news/">Archivio news</a></h2>
+            
+          </div>
+        
+          <div class="col-md-3">
+            <h2><i class="icon-circle-arrow-right"></i> <a href="/newsletter/">Newsletter</a></h2>
+            
+          </div>
+        
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 closer">
+            <button class="closer" data-target="#nav-id-4"><i class="icon-sort-up"></i></button>
+          </div>
+        </div>      
+      </div>
+    </div>
+
+    <!-- /collapsible-menu -->
+
+    <!-- main menu -->
+    <div id="main-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header"></div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="/default.asp">
+                <img id="logo-brachi-main-menu" src="/images/logo-brachi.png" title="Brachi" alt="logo Brachi"/>
+              </a>
+            </li>
+          </ul>
+          <ul id="main-menu" class="nav navbar-nav navbar-right">
+			
+            <li>
+              <a href="#" data-status="inactive" data-target="#nav-id-2">
+                Il Gruppo
+              </a>              
+            </li>
+            
+            <li>
+              <a href="#" data-status="inactive" data-target="#nav-id-3">
+                Servizi
+              </a>              
+            </li>
+            
+            <li>
+              <a href="#" data-status="inactive" data-target="#nav-id-5">
+                Contatti
+              </a>              
+            </li>
+            
+            <li>
+              <a href="#" data-status="inactive" data-target="#nav-id-4">
+                News
+              </a>              
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- /main menu -->
+  </header>
+  <!-- /header -->
+  <!-- content -->
+  <section id="content">
+    <div class="container">
+      <div class="row">
+      
+        <!-- secondary nav -->
+        <div class="col-md-3 secondary-nav">
+          <h2>Servizi</h2>
+			
+          <ul>
+			
+            <li>
+              <h3 class="active"><a href="/Testing/P/11">Testing</a></h3>
+				
+              <ul>
+				
+                <li><a href="/Prove_Di_Laboratorio/P/12">Prove di laboratorio</a></li>
+				                
+				
+              <ul>
+				
+                <li><a href="/Test_E_Analisi/P/39">Test e analisi</a></li>
+                
+				
+              </ul>
+              
+                <li><a href="/Divisione_Calzature/P/33">Divisione Calzature</a></li>
+				                
+				
+                <li><a href="/Condizionatura_Materie_Tessili/P/14">Condizionatura materie tessili</a></li>
+				                
+				
+                <li><a href="/My_Lab/P/15">My Lab</a></li>
+				                
+				
+                <li><a href="/Accreditamenti/P/16">Accreditamenti</a></li>
+				                
+				
+                <li><a href="/Membership/P/34">Membership</a></li>
+				                
+				
+                <li><a href="/Clienti/P/36">Clienti</a></li>
+				                
+				
+              </ul>
+              
+            </li>
+            
+            <li>
+              <h3><a href="/Consulenza/P/17">Consulenza</a></h3>
+				
+            </li>
+            
+            <li>
+              <h3><a href="/Sostenibilita/P/21">Sostenibilità</a></h3>
+				
+            </li>
+            
+          </ul>
+          
+           <div class="accredia">
+             <a class="" data-toggle="modal" data-target="#modal-accredia">
+               <img src="/images/logo-accredia.png" alt="logo Accredia" />
+             </a>             
+             <p>LAB N° 0224</p>
+             <p>
+               Membro degli Accordi di Mutuo Riconoscimento<br>
+               EA, IAF e ILAC
+             </p>
+             <p>
+               Signatory of EA, IAF and ILAC<br>
+               Mutual Recognition Agreements
+             </p>
+           </div>
+          
+        </div>
+        <!-- /secondary nav -->
+        <!-- page content -->
+        
+        <div class="col-md-6 brachi">
+        
+          <h2>Prove di laboratorio</h2>
+		<img src="/public/images/pagine/prove di laboratorio_3.jpg" class="article" alt="Servizi su misura" />
+          <p>
+			<h1>Servizi su misura</h1><p>Forte di un team tecnico di alto livello aggiornato attraverso regolari sessioni di formazione, Brachi &egrave; in grado di effettuare la totalit&agrave; dei test previsti dalla normativa italiana <strong>UNI</strong> ed europea <strong>EN</strong>. L&rsquo;idea di fondo &egrave; che non esistono prove standard in senso stretto: pensiamo che ogni prova, anche la pi&ugrave; ordinaria, vada decisa ed effettuata sulle specifiche esigenze del cliente.</p>
+<p>Un sofisticato parco di apparecchiature, costantemente ampliato e adeguato alle ultime innovazioni tecnologiche, ci consente di eseguire tutte le principali prove previste dalle normative internazionali <strong>ISO</strong>, inglesi <strong>BS</strong>, tedesche <strong>DIN</strong>, cinesi <strong>GB</strong>, statunitensi<strong> ASTM</strong>, <strong>AATCC</strong> e <strong>CFR</strong>, giapponesi <strong>JIS</strong>, nonch&eacute; dalle normative <strong>IUC</strong>, <strong>IUP</strong> e <strong>IUF</strong> per l&rsquo;industria conciaria.</p>
+<p>Anche nella tempistica, il nostro laboratorio &egrave; in grado di supportare le imprese con servizi dedicati.<strong> BrachiFast&nbsp;</strong>&egrave; uno di questi: un servizio in abbonamento che garantisce <strong>il risultato delle analisi entro un giorno</strong> dal ricevimento del campione. Uniche eccezioni, le ammine aromatiche, gli APEO&rsquo;s (alkyl phenol ethoxylates), i metalli pesanti e il cromo esavalente, per i quali i giorni necessari salgono a due.</p>Scarica <a href="public/allegati/Condizioni_Generali_del_Servizio.pdf" title="Condizioni_Generali_del_Servizio.pdf"><img src="img/pdf-icon.gif" title="Condizioni_Generali_del_Servizio.pdf" align="middle" style="margin-bottom:5px"/></a> allegato
+          </p>
+        
+        </div>
+        <!-- /page content -->
+		        <!-- sidebar -->
+        <div class="clearfix visible-sm visible-xs"></div>
+        <div class="col-md-3 brachi">
+          <div id="brachinews" class="sidebar">
+            <h3>Area riservata</h3>
+            <h2 class="sidebar">
+              <span class="modern-pict" style="text-transform: lowercase">a</span>&nbsp;Brachi Magazine
+            </h2>
+            <p class="first-p">
+              Per molti, ma non per tutti, notizie e approfondimenti strategici per conquistare i mercati.
+            </p>
+            <ul class="more">
+              <li><a href="/brachi_magazine_last">Ultimo numero</a></li>
+              <li><a href="/brachi_magazine">Archivio</a></li>
+              <li><a href="/brachi_magazine_register">Iscriviti</a></li>              
+            </ul>           
+          </div>
+          <div id="area_clienti" class="sidebar">
+            <h3>Area riservata</h3>
+            <h2 class="sidebar">
+              <span class="modern-pict">V</span>&nbsp;my lab
+            </h2>
+            <p class="first-p">
+              Dedicato ai nostri clienti, MyLab è il laboratorio online per consultare l'archivio storico delle prove già effettuate e l'avanzamento di quelle in corso.
+            </p>
+            <form id="form_area_clienti" action="http://77.239.144.110/sessionlogin.asp?ac=v" method="post">
+              <div class="form-group">
+                <input class="form-control" placeholder="nome utente" name="txtUserID" type="text"/>
+                <input class="form-control" placeholder="password" name="txtPassword" type="password" />
+              </div>
+            </form>
+            <ul class="more">
+              <li><a href="javascript:form_area_clienti.submit();">Accedi</a></li>
+              <li><a href="http://77.239.144.110/registrazione.asp?idling=1">Registrati</a></li>
+            </ul>           
+          </div>
+        </div>
+        <!-- /sidebar -->        
+      </div>
+    </div>
+  </section>
+  <!-- /content -->   
+  
+  <!-- news -->
+  <section id="news">
+    <div class="container">
+      <!-- news brachi content -->
+      <div id="content-news-brachi" class="row">
+      
+        <div class="col-md-4 news-brachi">
+          <h2><a href="/News/All_avanguardia_Tecnologica/N/24">All'avanguardia tecnologica</a></h2>
+          <h3><a href="/News/All_avanguardia_Tecnologica/N/24">Brachi Testing Services si potenzia con nuovi avanzati apparecchi di analisi</a></h3>
+          <a href="/News/All_avanguardia_Tecnologica/N/24"><img src="/img.aspx?opx=286&opy=146&img=news/bts%5Fmacchine%2Ejpg" /></a>
+          <p>
+          <p>Brachi Testing Services potenzia ulteriormente il proprio reparto chimico strumentale dotandosi di una serie di apparecchi di analisi scientifica di ultimissima generazione. Un investimento notevole ma necessario. Per Brachi, infatti, innovazione e ricerca sono da sempre sinonimi di competitivit&agrave; e affidabilit&agrave;.</p>
+          </p>
+        </div>
+        
+        <div class="clearfix visible-sm visible-xs"></div>
+        
+        <div class="col-md-4 news-brachi">
+          <h2><a href="/News/Affrontare_Il_Chemical_Management/N/23">Affrontare il chemical management</a></h2>
+          <h3><a href="/News/Affrontare_Il_Chemical_Management/N/23">I suggerimenti di 4sustainability ai brand e alle aziende della filiera per gestire rischi e controlli</a></h3>
+          <a href="/News/Affrontare_Il_Chemical_Management/N/23"><img src="/img.aspx?opx=286&opy=146&img=news/postconvegno%2Ejpg" /></a>
+          <p>
+          <p>Il 27 novembre si &egrave; tenuto a Firenze il seminario&nbsp;<em>Dress code: sostenibilit&agrave;. La gestione e il controllo delle sostanze chimiche per i brand e la filiera</em>. A organizzarlo, due realt&agrave; leader come Brachi e Process Factory attraverso il network&nbsp;4sustainability, creato un anno fa per supportare le aziende nel loro percorso verso la sostenibilit&agrave;.</p>
+          </p>
+        </div>
+        
+        <div class="clearfix visible-sm visible-xs"></div>
+        
+        <div class="col-md-4 news-brachi">
+          <h2><a href="/News/Guida_Ragionata_Alle_Sostanze_Killer/N/22">Guida ragionata alle sostanze killer</a></h2>
+          <h3><a href="/News/Guida_Ragionata_Alle_Sostanze_Killer/N/22">Brachi e Process Factory fanno il punto sulle sostanze chimiche pericolose</a></h3>
+          <a href="/News/Guida_Ragionata_Alle_Sostanze_Killer/N/22"><img src="/img.aspx?opx=286&opy=146&img=news/chemicals%2Ejpg" /></a>
+          <p>
+          <p>Brachi e Process Factory &ndash; &ldquo;alleati&rdquo; nell&rsquo;offrire alle aziende della moda e del tessile servizi di supporto sui temi della sostenibilit&agrave;, di prodotto e di processo &ndash; fanno il punto sulle sostanze chimiche pericolose, quelle che alcune aziende &ldquo;virtuose&rdquo; si sono gi&agrave; impegnate a eliminare e quelle che gi&agrave; nel breve futuro saranno messe al bando per legge.</p>
+          </p>
+        </div>
+                
+      </div>
+      <!-- /news brachi content -->    
+    </div>
+  </section>
+  <!-- /news -->  <!-- footer -->
+  <footer id="footer">
+    <div class="container wrapper">
+      <!-- footer nav -->
+      <div class="row footer-nav">
+        <div class="col-md-12">
+          <div class="navbar-header">
+            <img id="logo-brachi-footer" src="/images/logo-brachi-footer.png" title="Brachi" alt="logo Brachi"/>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li>
+                <button data-status="inactive" data-target="#footer-il-gruppo">
+                  Il Gruppo<i class="icon-sort-down"></i>
+                </button>              
+              </li>
+              <li>
+                <button data-status="inactive" data-target="#footer-legal" onclick="javascript:window.location.href='/page.asp?ID=41';">
+                  Legal
+                </button>              
+              </li>
+              <li>
+                <button data-status="inactive" data-target="#footer-privacy" onclick="javascript:window.location.href='/page.asp?ID=42';">
+					Privacy
+                </button>              
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- /footer nav -->
+      <!-- footer collapsible menus -->
+      <div id="footer-il-gruppo" data-visibility="hidden" data-status="collapsed" class="dropdown">
+        <div class="dropdown-item row">
+          <div class="col-md-12">
+            <ul>
+                <li><a href="/page.asp?IDLingua=1&ID=27" style="border-bottom: none"><img src="/images/logo-brachi-testing-services.png" title="Brachi Testing Services" alt="logo Brachi Testing Services"/></a></li>
+                <li><a href="/page.asp?IDLingua=1&ID=27" style="border-bottom: none"><img src="/images/logo-brachi-condizionatura-materie-tessili.png" title="Brachi -  Condizionatura materie tessili" alt="logo Brachi - Condizionatura materie tessili"/></a></li>
+                <li><a href="/page.asp?IDLingua=1&ID=27" style="border-bottom: none"><img src="/images/logo-brachi-studio-tecnico.png" title="Brachi, Studio Tecnico Brachi" alt="logo Brachi - Studio Tecnico Brachi"/></a></li>
+                <li><a href="/page.asp?IDLingua=1&ID=27" style="border-bottom: none"><img src="/images/logo-brachi-4-sustainability.png" title="Brachi -  4 Sustainability" alt="logo Brachi - 4 Sustainability"/></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 closer">
+              <button class="closer" data-target="#footer-il-gruppo"><i class="icon-sort-up"></i></button>
+            </div>
+          </div>      
+        </div>        
+      </div>
+      <!-- /footer collapsible menus -->
+    <!-- footer addresses -->
+    <div class="row hr">
+       <div class="col-md-12 addresses">
+                  <dl><dt>Italy Headquarters</dt><dd>Via Fonda di Mezzana, 61/L</dd><dd>59100 Prato</dd><dd>tel. +39.0574.591343 </dd><dd>fax +39.0574.593975</dd><dd><a href="mailto:marketing@brachi.it">marketing@brachi.it</a></dd></dl><dl><dt>China branch</dt><dd>Hangzhou Brachi Technological Services Co., LTD</dd><dd>Room 1102, n.9 building, No. 88 Jiangling Road</dd><dd>Binjiang District, Hangzhou</dd><dd>tel. +86.0571.82869972</dd><dd>fax  +86.0571.82869971</dd></dl>
+       </div>
+    </div>
+    <!-- /footer addresses -->
+    <!-- footer sign -->
+    <div class="row hr">
+       <div class="col-md-12">
+         <p>
+                  © 2014 Brachi - via Fonda di Mezzana, 61/L - 59100 Prato, Italy <br />P.IVA 00019150978 
+		 </p>
+       </div>
+    </div>
+    <!-- /footer sign -->        
+    </div>
+  </footer>
+  <!-- /footer -->
+
+  <!-- modal Accredia -->
+  <div class="modal fade" id="modal-accredia" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        </div>
+        <div class="modal-body">
+          Ciao io sono Accredia
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /modal Accredia -->
+
+	<script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+      ga('create', 'UA-49578168-1', 'brachi.company');
+      ga('send', 'pageview');
+    
+    </script>    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files 
+    as needed -->
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- Brachi -->
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="/js/scripts.js"></script>
+
+</body>
+</html>
